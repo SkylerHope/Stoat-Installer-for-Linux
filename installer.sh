@@ -5,6 +5,7 @@ curl -L -o latest-stoat.zip "https://github.com/stoatchat/for-desktop/releases/d
 curl -L -o /usr/share/icons/logo-stoat.png "https://raw.githubusercontent.com/stoatchat/assets/bd432f2298901a8566a092636eef0c35a3a80fbc/desktop/icon.png"
 mkdir -p latest-stoat
 unzip latest-stoat.zip -d latest-stoat
+rm latest-stoat.zip
 cd latest-stoat && cd Stoat-linux-x64
 sudo cp stoat-desktop /usr/local/bin/stoat
 
