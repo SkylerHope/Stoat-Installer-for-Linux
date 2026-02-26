@@ -12,6 +12,7 @@ APP_ICON="/usr/share/icons/logo-stoat.png"
 BIN_PATH="/usr/local/bin/stoat"
 APP_NAME="Stoat"
 DESKTOP_PATH="/usr/share/applications"
+
 cat > "$DESKTOP_PATH" << EOF
 [Desktop Entry]
 Version=1.3.0
@@ -24,5 +25,8 @@ Terminal=False
 Categories=Internet;
 StartupNotify=true
 EOF
+
+cd
+rm stoat-installer.sh
 
 update-desktop-database /usr/share/applications
