@@ -13,7 +13,7 @@ BIN_PATH="/usr/local/bin/stoat"
 APP_NAME="Stoat"
 DESKTOP_PATH="/usr/share/applications/stoat.desktop"
 
-sudo cat > "$DESKTOP_PATH" << EOF
+sudo tee "$DESKTOP_PATH" > /dev/null << EOF
 [Desktop Entry]
 Version=1.3.0
 Type=Application
@@ -29,4 +29,4 @@ EOF
 cd
 rm stoat-installer.sh
 
-update-desktop-database /usr/share/applications
+sudo update-desktop-database /usr/share/applications
