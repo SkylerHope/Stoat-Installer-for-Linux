@@ -11,7 +11,7 @@ sudo cp stoat-desktop /usr/local/bin/stoat
 APP_ICON="/usr/share/icons/logo-stoat.png"
 BIN_PATH="/usr/local/bin/stoat"
 APP_NAME="Stoat"
-DESKTOP_PATH="/usr/share/applications"
+DESKTOP_PATH="/usr/share/applications/stoat.desktop"
 
 cat > "$DESKTOP_PATH" << EOF
 [Desktop Entry]
