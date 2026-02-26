@@ -27,7 +27,7 @@ Categories=Internet;
 StartupNotify=true
 EOF
 
+sudo update-desktop-database /usr/share/applications
+
 cd
 rm stoat-installer.sh
-
-sudo update-desktop-database /usr/share/applications
