@@ -23,7 +23,7 @@ Exec=$BIN_PATH
 Icon=$APP_ICON
 Terminal=False
 Categories=Network;InstantMessaging;Chat;
-StartupNotify=true
+StartupNotify=false
 EOF
 
 sudo update-desktop-database /usr/share/applications
