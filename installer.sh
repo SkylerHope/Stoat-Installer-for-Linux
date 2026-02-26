@@ -13,7 +13,7 @@ BIN_PATH="/usr/local/bin/stoat"
 APP_NAME="Stoat"
 DESKTOP_PATH="/usr/share/applications/stoat.desktop"
 
-cat > "$DESKTOP_PATH" << EOF
+sudo cat > "$DESKTOP_PATH" << EOF
 [Desktop Entry]
 Version=1.3.0
 Type=Application
