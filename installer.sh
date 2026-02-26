@@ -7,3 +7,22 @@ mkdir -p latest-stoat
 unzip latest-stoat.zip -d latest-stoat
 cd latest-stoat && cd Stoat-linux-x64
 cp stoat-desktop /usr/local/bin/stoat
+
+APP_ICON="/usr/share/icons/logo-stoat.png"
+BIN_PATH="/usr/local/bin/stoat"
+APP_NAME="Stoat"
+DESKTOP_PATH="/usr/share/applications"
+cat > "$DESKTOP_PATH" << EOF
+[Desktop Entry]
+Version=1.3.0
+Type=Application
+Name=$APP_NAME
+Comment=Stoat is the chat app where you are the main character.
+Exec=$BIN_PATH
+Icon=$APP_ICON
+Terminal=False
+Categories=Internet;
+StartupNotify=true
+EOF
+
+update-desktop-database /usr/share/applications
