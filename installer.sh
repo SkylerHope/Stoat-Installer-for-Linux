@@ -6,7 +6,7 @@ curl -L -o /usr/share/icons/logo-stoat.png "https://raw.githubusercontent.com/st
 mkdir -p latest-stoat
 unzip latest-stoat.zip -d latest-stoat
 cd latest-stoat && cd Stoat-linux-x64
-cp stoat-desktop /usr/local/bin/stoat
+sudo cp stoat-desktop /usr/local/bin/stoat
 
 APP_ICON="/usr/share/icons/logo-stoat.png"
 BIN_PATH="/usr/local/bin/stoat"
