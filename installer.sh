@@ -2,7 +2,7 @@
 
 cd
 curl -L -o latest-stoat.zip "https://github.com/stoatchat/for-desktop/releases/download/v1.3.0/Stoat-linux-x64-1.3.0.zip"
-curl -L -o /usr/share/icons/logo-stoat.png "https://raw.githubusercontent.com/stoatchat/assets/bd432f2298901a8566a092636eef0c35a3a80fbc/desktop/icon.png"
+curl -L -o /usr/share/icons/logo-stoat.png "https://raw.githubusercontent.com/stoatchat/assets/bd432f2298901a8566a092636eef0c35a3a80fbc/desktop/hicolor/256x256.png"
 mkdir -p latest-stoat
 unzip latest-stoat.zip -d latest-stoat
 rm latest-stoat.zip
@@ -23,7 +23,7 @@ Comment=Stoat is the chat app where you are the main character.
 Exec=$BIN_PATH
 Icon=$APP_ICON
 Terminal=False
-Categories=Internet;
+Categories=Network;InstantMessaging;Chat;
 StartupNotify=true
 EOF
 
